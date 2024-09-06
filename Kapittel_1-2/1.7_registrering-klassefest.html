@@ -10,15 +10,23 @@
 		body{
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 		}
+		.text-input{
+			width: 200px;
+		}
+
+		label{
+			display: inline-block;
+			width: 100px;
+		}
 	</style>
 </head>
 
 <body>
 	<h2>Skjema for registrering klassefest!</h2>
 	<form action="1.7_registrering.html">
-		<input type="text" name="fornavn" required placeholder="Hva heter du">
+		<input type="text" name="fornavn" required placeholder="Hva heter du" class="text-input">
 		<br>
-		<input type="number" name="alder" required min="0" max="100" step="1" placeholder="Hvor gammel er du?">
+		<input type="number" name="alder" required min="0" max="100" step="1" placeholder="Hvor gammel er du?" class="text-input">
 		<br>
 		<select name="mat" required>
 			<option value="">Velg mat</option>
@@ -33,7 +41,7 @@
 		<input type="radio" name="drikke" value="vann" id="radio-vann"checked><label for="radio-vann">Vann</label>
 		<br>
 		<input type="checkbox" name="tilbehor" id="tilbehor-ketsjup" value="ketsjup"><label for="tilbehor-ketsjup">Ketsjup</label>
-		<input type="checkbox" name="tilbehor" id="tilbehor-senap" value="senap"><label for="tilbehor-senap">Senap</label>
+		<input type="checkbox" name="tilbehor" id="tilbehor-sennep" value="sennep"><label for="tilbehor-sennep">Sennep</label>
 		<br>
 		<button>Send inn</button>
 	</form>
