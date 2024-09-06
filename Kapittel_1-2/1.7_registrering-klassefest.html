@@ -6,14 +6,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		body{
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+	</style>
 </head>
 
 <body>
+	<h2>Skjema for registrering klassefest!</h2>
 	<form action="1.7_registrering.html">
-		<h3>Skriv inn ditt navn:</h3>
-		<input type="text" name="fornavn" required placeholder="Skriv fornavn...">
-		<input type="number" name="alder" required min="0" max="100" step="1">
-		<button>OK</button>
+		<input type="text" name="fornavn" required placeholder="Hva heter du">
+		<br>
+		<input type="number" name="alder" required min="0" max="100" step="1" placeholder="Hvor gammel er du?">
+		<br>
+		<select name="mat" required>
+			<option value="">Velg mat</option>
+			<option value="mat-hamburger">Hamburger</option>
+			<option value="mat-pizza">Pizza</option>
+			<option value="mat-taco">Taco</option>
+		</select>
+		<br>
+		<h3>Hva ønsker du å drikke til maten?</h3>
+		<input type="radio" name="drikke" value="brus" id="radio-brus"><label for="radio-brus">Brus</label>
+		<input type="radio" name="drikke" value="saft" id="radio-saft"><label for="radio-saft">Saft</label>
+		<input type="radio" name="drikke" value="vann" id="radio-vann"checked><label for="radio-vann">Vann</label>
+		<br>
+		<button>Send inn</button>
 	</form>
 </body>
 
