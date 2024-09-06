@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			p::first-letter {
+				font-size: 3rem;
+			}
+			p::first-line {
+				color: darkorange;
+			}
+			p::selection {
+				color: white;
+				background-color: blue;
+			}
+
+			q::before {
+				content: "«";
+			}
+			q::after {
+				content: "»";
+			}
+
+			q{
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<p>I dag leste jeg en artikkel i avisen hvor lederen for en naturvernorganisasjon skriver: <q>Korallrevene dør.</q> Det var skremmende lesing.</p>
+	</body>
+</html>
