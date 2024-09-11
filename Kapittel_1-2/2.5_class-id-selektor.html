@@ -4,6 +4,13 @@
 <head>
 	<title>Kjente byer</title>
 	<style>
+		*{
+			/* Nullstiller padding og margin*/
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
 		img {
 			margin-right: 10px;
 			border: 2px solid orange;
@@ -11,27 +18,52 @@
 
 		#hoved-bilde {
 			border-radius: 5px;
-			width: 150px;
+			width: 500px;
 		}
 
 		.rundt-bilde {
-			width: 75px;
+			width: 300px;
 			aspect-ratio: 1;
+			object-fit: cover;
 			border-radius: 50%;
 		}
 
 		.større-kantlinje{
-			border-width: 5px;
+			border-width: 25px;
 		}
+
+		h1{
+			font-size: 4rem;
+			margin: 40px 0;
+		}
+
+		input{
+			font-size: 2rem;
+		}
+
+		input[type=text]{
+			display: block;
+			height: 4rem;
+			width: 200px;
+		}
+
+		input[type=number]{
+			display: block;
+			height: 100px;
+			width: 200px;
+		}
+
 	</style>
 </head>
 
 <body>
 	<h1>Kjente byer</h1>
-	<img src="bilder/Pisa.jpg">
-	<img src="bilder/Moskva.jpg" >
-	<img src="bilder/TelAviv.jpg">
-	<img src="bilder/Paris.jpg" >
+	<img class="rundt-bilde" id="hoved-bilde" src="bilder/Pisa.jpg">
+	<img class="rundt-bilde" src="bilder/Moskva.jpg" >
+	<img class="rundt-bilde" src="bilder/TelAviv.jpg">
+	<img class="rundt-bilde større-kantlinje" src="bilder/Paris.jpg" >
+	<input type="text">
+	<input type="number">
 </body>
 
 </html>
