@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<style>
-			p::first-letter {
-				font-size: 3rem;
-			}
-			p::first-line {
-				color: darkorange;
-			}
-			p::selection {
-				color: white;
-				background-color: blue;
-			}
 
-			q::before {
-				content: "«";
-			}
-			q::after {
-				content: "»";
-			}
+<head>
+	<style>
+		html {
+			font-size: 50px;
+		}
 
-			q{
-				font-style: italic;
-			}
-		</style>
-	</head>
-	<body>
-		<p>I dag leste jeg en artikkel i avisen hvor lederen for en naturvernorganisasjon skriver: <q>Korallrevene dør.</q> Det var skremmende lesing.</p>
-	</body>
+		p::first-letter {
+			font-size: 3rem;
+		}
+
+		p::first-line {
+			color: darkorange;
+		}
+
+		p::selection {
+			color: white;
+			background-color: black;
+		}
+
+		q {
+			font-style: italic;
+		}
+
+		q::before {
+			content: "«";
+		}
+
+		q::after {
+			content: "»";
+		}
+	</style>
+</head>
+
+<body>
+	<p>I dag leste jeg en artikkel i avisen hvor lederen for en naturvernorganisasjon skriver: <q>Korallrevene dør.</q>
+		Det var skremmende lesing.</p>
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quis tenetur aliquid velit accusantium laudantium
+		sequi ullam, quos magnam, architecto optio nesciunt doloribus pariatur vitae aspernatur, iure non! Veritatis,
+		inventore?</p>
+</body>
+
 </html>
