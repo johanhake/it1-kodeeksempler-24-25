@@ -1,0 +1,36 @@
+div{
+    width: 600px;
+    margin: 0 auto;
+}
+
+div img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: blue;
+}
+
+ul li a:active {
+    background-color:blueviolet;
+}

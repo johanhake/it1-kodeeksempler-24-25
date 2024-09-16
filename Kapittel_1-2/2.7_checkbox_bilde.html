@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+        }
+
+        input[type=checkbox]{
+            display: none;
+        }
+
+        input[type=checkbox] + img{
+            border: 2px white solid;
+        }
+
+        input[type=checkbox]:checked + img{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bilde checkbox</h2>
+    <label for="chk-ekorn">
+        <input type="checkbox" id="chk-ekorn">
+        <img src="bilder/ekorn.jpg" alt="">
+    </label>
+</body>
+
+</html>
