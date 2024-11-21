@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Flexbox</title>
+    <style>
+        header {
+            background-image: url("images/1920-lush-green-trees-covering-a-forest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .top-section {
+            height: 350px;
+            background-color: green;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .flex-item {
+            background-color: white;
+            padding: 30px;
+        }
+        .wide-item {
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 40%;
+        }
+        .thin-item {
+            flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 20%;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .center-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #ekorn {
+            background-image: url(images/ekorn.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #funfact {
+            font-style: italic;
+        }
+        .bottom-section {
+            height: 200px;
+            background-color: white;
+            border-top: solid 2px #102612;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Hjem</li>
+                <li>Nyheter</li>
+                <li>Om oss</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <h1>LOGO</h1>
+    </header>
+    <main>
+        <section class="top-section flex-container">
+            <div class="flex-item wide-item" id="ekorn"></div>
+            <div class="flex-item wide-item center-text">
+                <h2>Ekorn</h2>
+                <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quas temporibus nostrum recusandae aliquam quisquam, totam ea excepturi. Porro animi soluta quasi pariatur ducimus itaque eum delectus eligendi ullam corporis.
+                </p>
+            </div>
+            <div class="flex-item thin-item center-text" >
+                <p id="funfact">
+                    <b>fun fact:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas temporibus.
+                </p>
+            </div>
+        </section>
+        <section class="bottom-section">
+            <h2>lower section</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, cumque. Eligendi omnis, ullam repellat ex veritatis corrupti molestias harum placeat architecto cumque reiciendis quae eum voluptatibus animi maiores laborum mollitia!
+        </section>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

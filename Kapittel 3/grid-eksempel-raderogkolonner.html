@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>GRID_rader_og_kolonner</title>
+    <style>
+        header {
+            background-image: url("images/1920-lush-green-trees-covering-a-forest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        .grid-container {
+            background-color: #b9e5c1;
+            padding: 10px;
+
+            /*definerer grid*/
+            display: grid;
+
+            /*Definerer ant. kolonner og størrelse på hver enkelt kolonne*/
+            grid-template-columns: 550px 550px;
+
+            /*Definerer størrelsen på rad nr. 1 når den bare har en verdi*/
+            grid-template-rows: 200px;
+
+            /*Definerer størrelsen på annenhver rad */
+            grid-auto-rows: 80px 120px;
+        }
+
+        .grid-container>* {
+            border: 2px solid #b9e5c1;
+            background-color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Hjem</li>
+                <li>Nyheter</li>
+                <li>Om oss</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <h1>LOGO</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div> 200 piksler høy </div>
+            <div> 200 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 120 piksler høy </div>
+            <div> 120 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 120 piksler høy </div>
+            <div> 120 piksler høy </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Velkommen igjen!</h2>
+    </footer>
+</body>
+
+</html>

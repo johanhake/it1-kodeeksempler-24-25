@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>GRID_fr</title>
+    <style>
+        header {
+            background-image: url("images/1920-lush-green-trees-covering-a-forest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .grid-container {
+            background-color:#b9e5c1;
+            padding: 10px;
+            /*definerer grid*/
+            display: grid;
+
+            /*Første kolonne vil være 200px, 2 og 3 vil dele resten av plassen likt*/
+            grid-template-columns: 200px 1fr 1fr;
+
+            /*Radene vil deles inn i like store deler*/
+            grid-auto-rows: 1fr;
+        }
+
+        .grid-container > * {
+            border: 2px solid #b9e5c1;
+            background-color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Hjem</li>
+                <li>Nyheter</li>
+                <li>Om oss</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <h1>LOGO</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div> 200 piksler bred </div>
+            <div> Deler på resten av plassen</div>
+            <div> Deler på resten av plassen</div>  
+            <div> 200 piksler bred</div>
+            <div> Deler på resten av plassen</div>
+            <div> Deler på resten av plassen</div>
+            <div> 200 piksler bred</div>  
+            <div> Deler på resten av plassen</div>
+            <div> Deler på resten av plassen</div>
+        </section>
+    </main>
+    <footer>
+        <h2>Velkommen igjen!</h2>
+    </footer>
+</body>
+</html>

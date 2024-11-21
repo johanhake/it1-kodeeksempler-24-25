@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>GRID_span</title>
+    <style>
+        header {
+            background-image: url("images/1920-lush-green-trees-covering-a-forest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .grid-container {
+            background-color:#b9e5c1;
+            padding: 10px;
+            /*definerer grid*/
+            display: grid;
+
+            /*Repeterer 1fr tre ganger for å lage tre kolonner*/
+            grid-template-columns: repeat(3,1fr);
+
+            grid-auto-rows: 1fr;
+        }
+
+        .grid-container > * {
+            border: 2px solid #b9e5c1;
+            background-color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /*Klasser for rad og kolonne som definerer span */
+        .two-rows{
+            grid-row: span 2; 
+        }
+
+        .two-columns{
+            grid-column: span 2;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Hjem</li>
+                <li>Nyheter</li>
+                <li>Om oss</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <h1>LOGO</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div class="two-rows two-columns"> Spanner over to rader og to kolonner </div>
+            <div> 1 </div>
+            <div> 2 </div>  
+            <div> 3 </div>
+            <div> 4 </div>
+            <div> 5 </div> 
+        </section>
+    </main>
+    <footer>
+        <h2>Velkommen igjen!</h2>
+    </footer>
+</body>
+</html>

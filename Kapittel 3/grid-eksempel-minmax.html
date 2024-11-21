@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>GRID_minmax</title>
+    <style>
+        header {
+            background-image: url("images/1920-lush-green-trees-covering-a-forest.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .grid-container {
+            background-color:#b9e5c1;
+            padding: 10px;
+            /*definerer grid*/
+            display: grid;
+
+            /*Definerer ant. kolonner og størrelse på hver enkelt kolonne*/
+            grid-template-columns: 500px 500px;
+
+            /*Velger enten minste verdi,80px, eller maks verdi, auto på radene */
+            grid-auto-rows: minmax(80px,auto);
+        }
+
+        .grid-container > * {
+            border: 2px solid #b9e5c1;
+            background-color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>Hjem</li>
+                <li>Nyheter</li>
+                <li>Om oss</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        <h1>LOGO</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div> Hei, alle sammen håper det går bra med dere. Koding kan være gøy en gang i blant. Håper denne teksten får plass i ruta.</div>
+            <div> Med minmax blir denne justert etter høyden til teksten. </div>
+            <div> 80 piksler høy </div>  
+            <div> 80 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 80 piksler høy </div>
+            <div> 80 piksler høy </div>  
+            <div> 80 piksler høy </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Velkommen igjen!</h2>
+    </footer>
+</body>
+</html>
